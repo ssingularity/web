@@ -19,7 +19,7 @@ jQuery(document).ready(function () {
         $(".mainBooks").load("login.html")
     });
 
-    var show_per_page=4;
+    var show_per_page=8;
     var current_page=0;
     var total_page=Math.ceil($(".mainBooks").children().length/show_per_page);
     $(".mainBooks").children().css("display","none");
