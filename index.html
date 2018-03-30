@@ -18,11 +18,18 @@
             body {
                 padding-top: 50px;
             }
-
-            .starter-template {
-                padding: 40px 15px;
-                text-align: center;
+            .row {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
             }
+            .row > [class*='col-'] {
+                display: flex;
+                flex-direction: column;
+            }
+
         </style>
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -134,6 +141,7 @@
                             <p>book name</p>
                             <br>
                             <p>25$</p>
+                            <br>
                             <br>
                             <button class="btn btn-primary btn-block">加入购物车<i class="icon-shopping-cart"></i></button>
                             <button class="btn btn-default btn-block">立刻购买</button>
